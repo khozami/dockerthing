@@ -10,6 +10,7 @@ __By default /usr/share/nginx/html/ is home of index.html but we can change the 
 
 - docker cp .\default.conf web:/etc/nginx/conf.d 
 - docker cp .\jof\ web:/var/www
+- docker commit web web-base
 - docker stop web
 - docker run --name web01 -dt -p 8080:80 web-base
 
